@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import q from "./photos/q.jpg";
+import q1 from "./photos/q2.png";
 const Card = ({
   s,
   id,
@@ -50,7 +50,7 @@ const Card = ({
         turnThings();
       }}
     >
-      <img className="image image--front" src={q} alt="an_image" />
+      <img className="image image--front" src={q1} alt="an_image" />
       <img className="image image--back" src={s} alt="an_image" />
     </div>
   );
