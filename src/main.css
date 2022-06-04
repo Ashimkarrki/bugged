@@ -3,12 +3,14 @@
 ::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .app {
   width: 70%;
   min-height: 30rem;
-  margin: 5rem auto 5rem auto; }
+  margin: 5rem auto 5rem auto;
+}
 
 .field {
   min-width: 60%;
@@ -23,27 +25,35 @@
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-template-rows: repeat(4, max-content);
   justify-items: center;
-  align-items: center; }
-  .field .image__container {
-    position: relative;
-    transform-style: preserve-3d; }
-  .field .image__container--turnup {
-    transform: rotateY(180deg);
-    transition: transform 1s; }
-  .field .image__container--turndown {
-    transform: rotateY(0deg);
-    transition: transform 1s; }
-  .field .image {
-    max-width: 7rem;
-    height: 8rem;
-    backface-visibility: hidden;
-    object-fit: contain; }
-    .field .image--back {
-      transform: rotateY(180deg); }
-    .field .image--front {
-      position: absolute; }
+  align-items: center;
+}
+.field .image__container {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.field .image__container--turnup {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+.field .image__container--turndown {
+  transform: rotateY(0deg);
+  transition: transform 1s;
+}
+.field .image {
+  max-width: 7rem;
+  height: 8rem;
+  backface-visibility: hidden;
+  object-fit: contain;
+}
+.field .image--back {
+  transform: rotateY(180deg);
+}
+.field .image--front {
+  position: absolute;
+}
 
 .newgame {
   padding: 0.5rem 1rem;
   margin: 5rem auto 0 auto;
-  display: block; }
+  display: block;
+}
