@@ -1,4 +1,4 @@
-import "./sass/main.scss";
+import "./main.css";
 import luffy from "./photos/luffy.png";
 import luffy2 from "./photos/luffy2.png";
 import brook from "./photos/brook.png";
