@@ -1,19 +1,9 @@
 import { React, useState, useEffect } from "react";
 import q1 from "./photos/q2.png";
-const Card = ({
-  s,
-  id,
-  prev,
-  setPrev,
-  isSame,
-  setIsSame,
-  clicked,
-  setClicked,
-}) => {
+const Card = ({ s, id, prev, setPrev, isSame, setIsSame }) => {
   const [turn, setTurn] = useState(false);
   const [isIntial, setIsInitial] = useState(true);
   const turnThings = () => {
-    console.log(clicked);
     if (!prev) {
       setIsInitial(false);
       setPrev(id);
@@ -23,7 +13,7 @@ const Card = ({
         setTurn(true);
         setPrev();
         setIsInitial(false);
-        setClicked((prev) => 0);
+        // setClicked((prev) => 0);
       } else {
         setTurn((prev) => true);
         setIsInitial(false);
@@ -33,11 +23,10 @@ const Card = ({
     }
   };
   useEffect(() => {
-    console.log("effect");
     if (prev === id) {
       setPrev();
       setTimeout(() => setTurn((prev) => false), 1600);
-      setClicked((prev) => 0);
+      // setClicked((prev) => 0);
     }
   }, [isSame]);
 
